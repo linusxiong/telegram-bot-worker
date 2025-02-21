@@ -71,7 +71,7 @@ addEventListener('fetch', event => {
 
 async function handleWebhook(event) {
   try {
-    if (SECRET && event.request.headers.get('X-Telegram-Bot-Api-Secret-Token') !== SECRET) {
+    if (SECRET && event.request.headers.get('x-telegram-bot-api-secret-token') !== SECRET) {
       return new Response('Unauthorized', { status: 403 })
     }
 
@@ -418,7 +418,7 @@ async function answerCallbackQuery(callbackQueryId, text) {
 
 async function registerWebhook(event, requestUrl, suffix, secret) {
   try {
-    const webhookUrl = `${requestUrl.protocol}//${requestUrl.hostname}${suffix}`
+    const webhookUrl = `https://telegram-bot-worker.dalao2333.workers.dev/webhook`
     const response = await fetch(`${API_BASE}/setWebhook`, {
       method: 'POST',
       headers: {
