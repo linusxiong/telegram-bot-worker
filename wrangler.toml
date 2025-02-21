@@ -3,8 +3,8 @@ main = "src/worker.js"
 compatibility_date = "2024-01-01"
 
 kv_namespaces = [
-  { binding = "USER_TOPICS", id = "YOUR_KV_ID_1" },
-  { binding = "USER_BLOCKS", id = "YOUR_KV_ID_2" }
+  { binding = "USER_TOPICS", id = "641af48c917c47cb978ecee46d841879" },
+  { binding = "USER_BLOCKS", id = "641af48c917c47cb978ecee46d841879" }
 ]
 
 [vars]
