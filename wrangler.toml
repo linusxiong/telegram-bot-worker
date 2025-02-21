@@ -13,3 +13,11 @@ ENV_BOT_TOKEN = "${ENV_BOT_TOKEN}"
 ENV_BOT_SECRET = "${ENV_BOT_SECRET}"
 ENV_ADMIN_UID = "${ENV_ADMIN_UID}"
 ENV_GROUP_ID = "${ENV_GROUP_ID}"
+
+# wrangler.toml (wrangler v3.88.0^)
+[observability.logs]
+enabled = true
+
+
+
+
